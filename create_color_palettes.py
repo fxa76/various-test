@@ -18,8 +18,8 @@ print("base color HSV {}".format(base_color_hsv))
 
 #init HSV
 c = list(base_color_hsv)
-c[1]=1.0
-c[2]=1.0
+# c[1]=1.0
+# c[2]=1.0
 base_color_hsv= tuple( c )
 
 HSV_tuples = [(base_color_hsv[0] , base_color_hsv[1]-x*1/N , base_color_hsv[2]) for x in range(N)]
